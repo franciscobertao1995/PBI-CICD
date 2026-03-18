@@ -1,0 +1,15 @@
+relationship 193ff3a5-070c-d85a-0200-d2d6364ea8be
+	isActive: false
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: SalesOrderHeader.SalesOrderID
+	toColumn: SalesOrderDetail.SalesOrderID
+
+relationship 5d715195-64ec-6761-0518-efdece910107
+	fromColumn: SalesOrderDetail.ProductID
+	toColumn: Product.ProductID
+
+relationship 60e54d2a-185c-cbfa-7cdb-2322a7c2ff29
+	fromColumn: SalesOrderHeader.CustomerID
+	toColumn: Customer.CustomerID
+
